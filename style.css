@@ -16,9 +16,6 @@ a {
 }
 *:focus {
   outline: none;
-  box-shadow: 0 0 0 0.04rem #b3f6ffcb;
-  border-radius: 5px;
-  padding: 2px;
 }
 .container {
   width: 100%;
@@ -29,6 +26,7 @@ a {
 }
 button:hover {
   background-color: #267984f0;
+  cursor: pointer;
 }
 a:hover,
 a:active {
@@ -37,40 +35,6 @@ a:active {
 .fa {
   color: white;
 }
-/* <!-- styling convention  -->
-    <!--
-    font family : georgia
-   
-   
-    nav bar : h=147px
-   
-   
-    logo : 20px
-    social logo : h and w = 32px ; 8px padding ;9px margin- r  ; margin-t: 29px
-    nav menu :  margin-r=  20px margin-b = 24px
-    normal text : 12px
-     big button : w=218px h=33px, margin=2px
-    small button : w=69px h=33px
-     H1 heading : 42px
-     subheadings : 16px
-     hero p : 16px ; line height : 22.4px
-      p: 12px
-      copyright section : height = 61px
-      copyright text : margin-t , margin -b :24  margin-left:20px
-     footer section : h= 216px inline-block
-   
-   
-   
-   
-   footer menu-heading : 20px , margin-t = 40 margin-b=30px
-          input fields text : margin t,l,b = 11px 
-    f-menu-item: 12px same as text
-     quck links : menu-item : 2px border-b
-     blog post title : 13px
-   admin name : 11px
-   lorem text : width: 223px;
-   height: 49px;
-    --> */
 
 /* ---------------------------------------Navbar ------------------------------------------------------------ */
 nav {
@@ -104,7 +68,7 @@ nav {
 .social-icons {
   color: rgb(255, 255, 255);
 }
-.logo:last-child {
+.logo:hover {
   background-color: #ee802f;
   color: rgb(255, 255, 255);
 }
@@ -220,8 +184,7 @@ ul {
   display: inline-block;
   vertical-align: bottom;
 }
-.dot:hover,
-.dot:active {
+.dot:last-child {
   background-color: white;
   border: 4px solid #3bafbe;
 }
@@ -276,8 +239,9 @@ img.image-box {
   color: #666666;
   text-align: center;
   font-style: italic;
-  padding-left: 52px;
-  padding-right: 52px;
+  width: 100%;
+  max-width: 708px;
+  margin: 0 auto;
 }
 .quote {
   line-height: 30px;
@@ -287,8 +251,8 @@ img.image-box {
 }
 .customer-card {
   display: inline-block;
-  width: 300px;
-  margin-right: 16px;
+  width: 30.8%;
+  margin-right: 32px;
 }
 .customer-card:last-child {
   margin-right: 0;
@@ -313,7 +277,7 @@ img.image-box {
   display: inline-block;
 }
 .customer {
-  width: 206px;
+  width: 68%;
   padding-left: 14px;
   vertical-align: top;
   padding-top: 4px;
